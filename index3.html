@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagel World - Reading, MA | Fresh Bagels & Specialty Coffee</title>
+    
+    <!-- Google Fonts import: Playfair Display (headings) & Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body id="top">
+
+    <!-- ============================================ -->
+    <!-- HEADER & STICKY NAVIGATION                   -->
+    <!-- ACCESSIBILITY: Added aria-label for nav      -->
+    <!-- ============================================ -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Shop Logo linking to top anchor -->
+            <a href="#top" class="logo">
+                <span class="logo-title">Bagel World</span>
+                <span class="logo-subtitle">Reading, MA</span>
+            </a>
+            
+            <!-- Main navigation bar with aria-label for accessibility -->
+            <nav aria-label="Main Navigation" class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <!-- NEW CONTENT: Added Reviews link -->
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#visit">Visit Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============================================ -->
+        <!-- 1. HOME SECTION (HERO BANNER & CARDS)        -->
+        <!-- Background: Off-white (#FFFAF3)               -->
+        <!-- ============================================ -->
+        <section id="home" class="home-section">
+            
+            <!-- Full-width hero banner with dark overlay -->
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <h1 class="hero-title">Bagel World</h1>
+                    <p class="tagline">Popular bagel shop offering a wide variety of fresh bagels and hearty breakfast sandwiches.</p>
+                    <p class="welcome-text">Whether you need a quick morning coffee on the run or a warm place to sit and meet friends, we bring you fresh baking with fast, friendly service every single day.</p>
+                    <a href="#menu" class="btn btn-caramel">View Our Menu</a>
+                </div>
+            </div>
+
+            <!-- Featured item cards row -->
+            <div class="featured-container">
+                <h2 class="section-title text-center">Featured Favorites</h2>
+                
+                <div class="cards-grid">
+                    
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <img src="French%20toast%18bagel.jpg" alt="Freshly baked French Toast Bagel with maple glaze" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">French Toast Bagel</h3>
+                            <p class="card-desc">Sweet, cinnamon-swirled dough baked to perfection with a light maple drizzle.</p>
+                            <span class="card-price">$2.75</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <img src="cold%20%20brew%20latte.jpg" alt="Glass of ice-cold signature cold brew coffee" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Signature Cold Brew</h3>
+                            <p class="card-desc">Slow-steeped for 18 hours for an ultra-smooth, refreshing coffee punch.</p>
+                            <span class="card-price">$4.25</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <img src="Maple%20Cinnamon%20Latter.jpg" alt="Hot Maple Cinnamon Latte with milk foam art" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Maple Cinnamon Latte</h3>
+                            <p class="card-desc">Espresso blended with steamed milk, local maple syrup, and top cinnamon spice.</p>
+                            <span class="card-price">$4.95</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!-- 2. ABOUT US SECTION                          -->
+        <!-- Background: Cream (#F5EBDD)                   -->
+        <!-- ============================================ -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Our Shop</h2>
+                
+                <div class="about-layout">
+                    <!-- Column 1: Story and features -->
+                    <div class="about-text">
+                        <p class="lead-p">First opened our doors in 1993, Bagel World has been a staple of North Shore homes, schools and offices. We take great pride in bringing our loyal customers a truly authentic bagel made with the same Polish-inspired recipe our father first created.</p>
+                        <p>We believe in high quality, speed, and warmth. From early morning breakfast rushes to lazy afternoon coffee breaks, our shop is built around community and comfort.</p>
+                        
+                        <h3>What Makes Us Special</h3>
+                        <ul class="features-list">
+                            <li><strong>Authentic Recipe:</strong> Polish-inspired kettle-boiled dough baked fresh every morning.</li>
+                            <li><strong>Free High-Speed Wi-Fi:</strong> Stay connected while enjoying your morning brew.</li>
+                            <li><strong>Cozy Seating Area:</strong> Plentiful tables to meet up with friends or work comfortably.</li>
+                            <li><strong>Fast Service:</strong> Optimized counter line so you get your breakfast without the long wait.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Descriptive alt text for WCAG compliance -->
+                    <div class="about-image-wrapper">
+                        <img src="https://placehold.co/600x450/2C5E3B/FFFFFF?text=Inside+Bagel+World" alt="Cozy interior seating area and fresh bagel display counter at Bagel World" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!-- 3. MENU SECTION                              -->
+        <!-- Background: Off-white (#FFFAF3)               -->
+        <!-- ============================================ -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-intro">Explore our broad selection of hot drinks, iced cold brews, authentic bagels, homemade spreads, and hearty items.</p>
+                
+                <div class="table-responsive">
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Size</th>
+                                <th scope="col" class="price-col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>French Toast Bagel</strong></td>
+                                <td>Sweet cinnamon bagel baked fresh daily</td>
+                                <td>Single</td>
+                                <td class="price-col">$2.75</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Everything Bagel</strong></td>
+                                <td>Topped with sesame seeds, poppy seeds, onion, garlic, and sea salt</td>
+                                <td>Single</td>
+                                <td class="price-col">$2.50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>House Cream Cheese Spread</strong></td>
+                                <td>Choice of Plain, Garden Veggie, Scallion, or Honey Walnut</td>
+                                <td>8 oz Tub</td>
+                                <td class="price-col">$4.50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bacon, Egg & Cheese</strong></td>
+                                <td>Crispy Applewood bacon, fried egg, and cheddar on your choice of bagel</td>
+                                <td>Sandwich</td>
+                                <td class="price-col">$6.95</td>
+                            </tr>
+                            <tr>
+                                <td><strong>House Latte</strong></td>
+                                <td>Double shot of espresso mixed with creamy steamed milk</td>
+                                <td>16 oz (Medium)</td>
+                                <td class="price-col">$4.50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Signature Cold Brew</strong></td>
+                                <td>Slow-steeped craft cold brew served over ice</td>
+                                <td>20 oz (Large)</td>
+                                <td class="price-col">$4.25</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maple Cinnamon Latte</strong></td>
+                                <td>Espresso, steamed milk, real maple syrup, and ground cinnamon</td>
+                                <td>16 oz (Medium)</td>
+                                <td class="price-col">$4.95</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Spiced Chai Latte</strong></td>
+                                <td>Black tea infused with spice blends and creamy milk</td>
+                                <td>16 oz (Medium)</td>
+                                <td class="price-col">$4.25</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Side of Crispy Bacon</strong></td>
+                                <td>Three thick-cut strips of Applewood smoked bacon</td>
+                                <td>Side Order</td>
+                                <td class="price-col">$3.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!-- 4. NEW CONTENT: CUSTOMER REVIEWS SECTION     -->
+        <!-- Positioned between Menu and Visit Us          -->
+        <!-- Background: Cream (#F5EBDD)                   -->
+        <!-- ============================================ -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-intro">See why locals and visitors make Bagel World their daily morning tradition.</p>
+                
+                <div class="reviews-grid">
+                    
+                    <!-- Review Card 1 -->
+                    <article class="review-card">
+                        <div class="review-rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+                        <blockquote class="review-quote">
+                            "The French Toast bagel is an absolute masterpiece! Perfectly baked every morning, and the staff treats you like family."
+                        </blockquote>
+                        <div class="reviewer-info">
+                            <h3 class="reviewer-name">Maya S.</h3>
+                            <span class="reviewer-tag">Local Resident</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 2 -->
+                    <article class="review-card">
+                        <div class="review-rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+                        <blockquote class="review-quote">
+                            "Best cold brew on the North Shore hands down. Fast service even during peak breakfast rush. My daily go-to spot!"
+                        </blockquote>
+                        <div class="reviewer-info">
+                            <h3 class="reviewer-name">David R.</h3>
+                            <span class="reviewer-tag">Regular Customer</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 3 -->
+                    <article class="review-card">
+                        <div class="review-rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+                        <blockquote class="review-quote">
+                            "Bagel World catered our office breakfast meeting and everyone was raving about the fresh spreads and egg sandwiches."
+                        </blockquote>
+                        <div class="reviewer-info">
+                            <h3 class="reviewer-name">Sarah M.</h3>
+                            <span class="reviewer-tag">Reading MA Resident</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!-- 5. VISIT US / CONTACT SECTION                -->
+        <!-- UPDATED: 2-column layout with "Get Directions" -->
+        <!-- Background: Off-white (#FFFAF3)               -->
+        <!-- ============================================ -->
+        <section id="visit" class="visit-section">
+            <div class="container">
+                <h2 class="section-title">Visit Us</h2>
+                
+                <!-- Two-column grid on desktop -->
+                <div class="visit-grid">
+                    
+                    <!-- Column 1: Location, Contact & Get Directions button -->
+                    <div class="visit-column visit-info">
+                        <h3>Location & Contact</h3>
+                        <p class="address">
+                            <strong>Bagel World Reading</strong><br>
+                            323 Main Street, Reading, MA 01867
+                        </p>
+                        <p><strong>Phone:</strong> <a href="tel:7819440000">(781) 944-0000</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:

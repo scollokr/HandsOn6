@@ -1,0 +1,218 @@
+/* ==========================================================================
+   1. GLOBAL STYLES, VARIABLES & ACCESSIBILITY
+   ========================================================================== */
+
+:root {
+  --primary-green: #2C5E3B;         /* Deep green for headers & accents */
+  --green-hover: #1E3F27;           /* Darker green shade */
+  --caramel: #A05E2B;               /* Caramel accent (adjusted for WCAG AA 4.5:1 contrast) */
+  --caramel-dark: #824B20;          /* Darker caramel for button hovers */
+  --caramel-soft: #F5E8D7;          /* Soft caramel for table row highlights */
+  --bg-cream: #F5EBDD;           /* Alternating off-white background */
+  --bg-cream: #F5EBDD;              /* Alternating warm cream background */
+  --espresso-dark: #231A14;         /* REDESIGNED: Dark espresso footer background */
+  --espresso-bottom: #18110D;       /* Footer bottom copyright bar background */
+  --overlay-dark: rgba(75, 46, 43, 0.58); /* Dark semi-transparent hero overlay */
+  --text-dark: #2C2621;             /* Dark charcoal body text */
+  --border-light: #DCCEB8;          /* Subtle tan borders */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Open Sans', Go, sans-serif;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enable smooth scrolling for anchor links */
+html {#
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-offwhite);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+}
+
+/* Paragraph spacing and line-height for readability */
+p {
+  line-height: 1.7;
+}
+
+/* Shared Section Layout Container */
+.container {
+  width: 60%;
+  max-width: 100x;
+  margin: 0 auto;
+}
+
+/* Section vertical spacing */
+section {
+  padding: 85px 0;
+}
+
+/* Headings Base Styling */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--primary-green);
+  margin-bottom: 15px;
+}
+
+/* Section Heading with thin caramel line underline */
+.section-title {
+  font-size: 2.2rem;
+  border-bottom: 2px solid var(--caramel);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 35px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ACCESSIBILITY: Keyboard Focus Outline (:focus-visible) */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.back-to-top:focus-visible {
+  outline: 3px solid var(--caramel);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Buttons Base Styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 30px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  min-height: 44px; /* ACCESSIBILITY: Touch target minimum height */
+}
+
+.btn-caramel {
+  background-color: var(--caramel);
+  color: #FFFFFF;
+}
+
+.btn-caramel:hover {
+  background-color: var(--caramel-dark);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==========================================================================
+   2. STICKY HEADER & ANIMATED NAVIGATION
+   ========================================================================== */
+
+.site-header {
+  background-color: var(--primary-green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.logo-subtitle {
+  font-size: 0.8rem;
+  color: var(--bg-cream);
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Animated Underline Effect */
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--caramel);
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--caramel);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+
+/* ==========================================================================
+   3. HOME SECTION (HERO BANNER & FEATURED CARDS)
+   ========================================================================== */
+
+.home-section {
+  background-color: var(--bg-offwhite);
+  padding-top: 0;
+}
+
+.hero-banner {
+  min-height: 70vh;
+  width: 100%;
+  background: linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+              url('https://placehold.co/1600x900/2C5E3B/FFFFFF?text=Bagel+World+Shop+Front') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color:
